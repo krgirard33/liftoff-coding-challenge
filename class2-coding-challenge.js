@@ -12,15 +12,15 @@ function minMax(arr) {
     let max = arr[0];
     
     let result =  [];
-    for (i=0; i< arr.length; i++) {
-        if (arr[i] < min) {
-            min = arr[i];
+    for (const element of arr) {
+        if (element < min) {
+            min = element;
         }
     }
 
-    for (i=0; i< arr.length; i++) {
-        if (arr[i] > max) {
-            max = arr[i];
+    for (const element of arr) {
+        if (element > max) {
+            max = element;
         }
     }
 
