@@ -18,15 +18,12 @@ class Person {
   }
 
   compareAge(other) {
-    let diff = "";
-
     if (other.age > this.age) {
-      diff = "is older than me.";
+      return `${other.name} is older than me.`;
     } else if (other.age < this.age) {
-      diff = "is younger than me.";
+      return `${other.name} is younger than me.`;
     } else {
-      diff = "is the same age as me.";
+      return `${other.name} is the same age as me.`;
     }
-    return `${other.name} ${diff}`;
   }
 }
