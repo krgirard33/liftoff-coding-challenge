@@ -16,7 +16,6 @@ function LongestWord(sen) {
 
     // removes the non-alpha characters
     for (const element of sen) {
-
         if (element.match(pattern)) {
             hold = hold + element;
         }
